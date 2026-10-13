@@ -1,0 +1,32 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f4f7fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea, select { font: inherit; }
+.shell { max-width: 1120px; margin: 0 auto; padding: 34px 22px 48px; }
+.hero { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px; padding: 30px; color: white; border-radius: 20px; background: linear-gradient(120deg, #14294b, #2864a7); box-shadow: 0 12px 28px #193d681c; }
+.eyebrow { margin: 0 0 8px; font-size: 11px; letter-spacing: .16em; font-weight: 800; opacity: .75; }
+h1 { margin: 0; font-size: clamp(27px, 4vw, 38px); letter-spacing: -.04em; }
+.subtitle { margin: 10px 0 0; color: #d9e7f8; }
+.stat { min-width: 125px; padding: 17px; border: 1px solid #ffffff3d; border-radius: 14px; background: #ffffff12; text-align: center; }
+.stat strong, .stat span { display: block; }
+.stat strong { font-size: 30px; }.stat span { font-size: 12px; opacity: .8; }
+.panel { background: white; border: 1px solid #e5eaf2; border-radius: 16px; padding: 24px; margin: 18px 0; box-shadow: 0 5px 18px #17203308; }
+.section-title { display: flex; justify-content: space-between; margin-bottom: 20px; }
+h2 { margin: 0; font-size: 20px; letter-spacing: -.02em; }.section-title p { margin: 6px 0 0; color: #68758a; font-size: 13px; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+label { display: flex; flex-direction: column; gap: 7px; font-size: 12px; font-weight: 700; color: #4a5870; }
+input, textarea, select { width: 100%; min-width: 0; padding: 11px 12px; border: 1px solid #dbe2ec; border-radius: 9px; outline: none; color: #172033; background: #fff; }
+input:focus, textarea:focus, select:focus { border-color: #3679c8; box-shadow: 0 0 0 3px #3679c81c; }
+.wide { grid-column: 1 / -1; }
+button { border: 0; border-radius: 9px; padding: 11px 16px; font-weight: 750; color: white; background: #2465ac; cursor: pointer; }
+button:hover:not(:disabled) { filter: brightness(.95); } button:disabled { opacity: .45; cursor: not-allowed; }
+.secondary { color: #24456f; background: #edf3fa; }
+.alert { border-radius: 10px; padding: 12px 15px; margin: 14px 0; font-size: 14px; }.error { color: #8a2330; background: #fff0f1; border: 1px solid #f4c6cb; }.success { color: #176044; background: #eaf8f1; border: 1px solid #bce9d3; }
+.filters { display: grid; grid-template-columns: 1fr 220px auto; gap: 14px; align-items: end; margin-bottom: 20px; }
+.cards { display: grid; gap: 14px; }.request-card { border: 1px solid #e5eaf2; border-radius: 13px; padding: 18px; }
+.card-top { display: flex; justify-content: space-between; gap: 18px; }.card-top h3 { margin: 8px 0 3px; font-size: 17px; }.client { margin: 0; color: #66758a; font-size: 13px; }
+.priority { display: inline-block; padding: 4px 8px; border-radius: 99px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }.priority.low { background: #edf3fa; color: #3d5c7f; }.priority.medium { background: #fff3d9; color: #855b0c; }.priority.high { background: #ffe8e9; color: #a72e3c; }
+.status-label { min-width: 145px; }.description { color: #43516a; font-size: 14px; line-height: 1.5; }.meta { display: flex; gap: 18px; flex-wrap: wrap; color: #7a8799; font-size: 11px; padding: 12px 0; border-bottom: 1px solid #edf0f5; }
+.notes { padding-top: 13px; font-size: 12px; }.note { display: flex; justify-content: space-between; gap: 12px; color: #4b5870; padding: 7px 0; margin: 0; border-bottom: 1px solid #f0f2f6; }.note small { color: #8792a2; white-space: nowrap; }.note-entry { display: flex; gap: 8px; margin-top: 12px; }.note-entry input { flex: 1; }
+.empty { padding: 28px; color: #7a8799; text-align: center; background: #f9fbfd; border-radius: 10px; }.pagination { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 20px; color: #6c788a; font-size: 12px; }.pagination div { display: flex; gap: 8px; } footer { text-align: center; color: #8b96a7; font-size: 12px; padding: 18px; }
+@media (max-width: 700px) { .shell { padding: 16px 12px 30px; }.hero { padding: 22px; align-items: flex-start; }.stat { min-width: 90px; padding: 12px; }.form-grid, .filters { grid-template-columns: 1fr; }.panel { padding: 17px; }.card-top { flex-direction: column; }.status-label { max-width: 220px; }.note { flex-direction: column; gap: 4px; }.pagination { align-items: flex-start; flex-direction: column; } }

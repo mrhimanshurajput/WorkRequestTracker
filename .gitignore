@@ -1,0 +1,15 @@
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/secrets.json
+
+# Dependencies and generated files
+node_modules/
+dist/
+bin/
+obj/
+.vs/
